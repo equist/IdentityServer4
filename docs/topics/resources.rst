@@ -1,3 +1,4 @@
+.. _refResources:
 Defining Resources
 ==================
 
@@ -34,7 +35,7 @@ If you want to support them all, you can add them to your list of supported iden
             new IdentityResources.OpenId(), 
             new IdentityResources.Email(),
             new IdentityResources.Profile(),
-            new IdentityResources.Telephone(),
+            new IdentityResources.Phone(),
             new IdentityResources.Address()
         };
     }
@@ -107,3 +108,5 @@ To get access tokens for APIs, you also need to register them as a scope. This t
     }
 
 See the :ref:`reference <refApiResource>` section for more information on API resource settings.
+
+.. note:: The user claims defined by resources are used to tell the  :ref:`IProfileService <refProfileService>` extensibility point which claims to include in tokens.
